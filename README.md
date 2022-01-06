@@ -1,8 +1,7 @@
 # Arduino ESP8266 sntp Time Library
 
 ```c
-void setSyncReceiver(setExternalTime setTimeFunction);   // set the external time synchronizer
-
+void setSyncReceiver(setExternalTime setTimeFunction);   // called every time of sntp sync
 
 example of setTimeFunction:
 
@@ -33,7 +32,6 @@ bool sntpSetTimeZone(int8_t tz);    //  always stop before change
 
 /** SNTP get time_zone default GMT + 8 */
 int8_t sntpGetTimeZone();
-
 ```
 
 
