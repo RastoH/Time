@@ -1,0 +1,29 @@
+{
+    "name": "sntpTime",
+    "description": "ESP8266 sntp Time keeping library",
+    "keywords": "Time, date, hour, minute, second, day, week, month, year, RTC, sntp",
+    "authors": [
+        {
+            "name": "Michael Margolis"
+        },
+        {
+            "name": "Paul Stoffregen",
+            "email": "paul@pjrc.com",
+            "url": "http://www.pjrc.com",
+            "maintainer": true
+        }
+        {
+            "name": "RastoH"
+        },
+    ],
+    "repository": {
+        "type": "git",
+         "url": "https://github.com/RastoH/Time"
+    },
+    "version": "1.6.1.sntp",
+    "frameworks": "Arduino",
+    "platforms": "espressif8266" 
+    "examples": [
+        "examples/*/*.ino"
+    ]
+}
