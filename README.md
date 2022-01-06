@@ -1,9 +1,9 @@
 # Arduino ESP8266 sntp Time Library
 
-
+```c
 void setSyncReceiver(setExternalTime setTimeFunction);   // set the external time synchronizer
 
-```c
+
 example of setTimeFunction:
 
 void rtc_set_sntp() {
@@ -11,9 +11,8 @@ void rtc_set_sntp() {
   ntp_updated = true;
   ntp_last_update = current_stamp;
   rtc_set(current_stamp);
-  Logger_info("sntp => RTC update  %u  %s", current_stamp, sntpGetRealTime(current_stamp).c_str());  //  sntp_get_real_time(current_stamp)
+  Logger_info("sntp => RTC updated  %s", sntpGetRealTime(current_stamp).c_str());
 }
-```
 
 void sntpSetup(const char* server1, const char* server2 = nullptr, const char* server3 = nullptr);
 
@@ -35,6 +34,7 @@ bool sntpSetTimeZone(int8_t tz);    //  always stop before change
 /** SNTP get time_zone default GMT + 8 */
 int8_t sntpGetTimeZone();
 
+```
 
 
 
