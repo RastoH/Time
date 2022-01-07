@@ -24,7 +24,18 @@ adjustTime	KEYWORD2
 setSyncProvider	KEYWORD2
 setSyncInterval	KEYWORD2
 timeStatus	KEYWORD2
-TimeLib	KEYWORD2
+#######################################
+# sntp (KEYWORD2)
+#######################################
+setSyncReceiver	KEYWORD2
+sntpTime	KEYWORD2
+sntpSetup	KEYWORD2
+sntpStart	KEYWORD2
+sntpEnabled	KEYWORD2
+sntpServerName	KEYWORD2
+sntpServer	KEYWORD2
+sntpSetTimeZone	KEYWORD2
+sntpGetTimeZone	KEYWORD2
 #######################################
 # Instances (KEYWORD2)
 #######################################
