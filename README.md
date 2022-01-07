@@ -6,7 +6,7 @@ void setSyncReceiver(setExternalTime setTimeFunction);   // called every time of
 example of setTimeFunction:
 
 void rtc_set_sntp() {
-  uint32_t current_stamp = sntp_get_current_timestamp();
+  time_t current_stamp = Now();
   ntp_updated = true;
   ntp_last_update = current_stamp;
   rtc_set(current_stamp);
