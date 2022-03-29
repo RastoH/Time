@@ -55,10 +55,10 @@ for time synchronization.
 
 ## Functionality
 
-To use the Time library in an Arduino sketch, include TimeLib.h.
+To use the Time library in an Arduino sketch, include sntpLib.h.
 
 ```c
-#include <TimeLib.h>
+#include <sntpLib.h>
 ```
 
 The functions available in the library include
@@ -197,8 +197,3 @@ Low-level functions to convert between system time and individual time elements 
 breakTime(time, &tm);  // break time_t into elements stored in tm struct
 makeTime(&tm);         // return time_t from elements stored in tm struct
 ```
-
-This [DS1307RTC library][1] provides an example of how a time provider
-can use the low-level functions to interface with the Time library.
-
-[1]:<https://github.com/PaulStoffregen/DS1307RTC> 
